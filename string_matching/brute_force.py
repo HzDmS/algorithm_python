@@ -1,4 +1,5 @@
-""" Brute-force solution """
+# Brute-force solution
+
 
 def search(text, pattern) -> list:
     """ Search pattern in text.

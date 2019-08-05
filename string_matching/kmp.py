@@ -1,8 +1,10 @@
 """ KMP implementation """
 
+
 def compute_prefix(pattern) -> list:
-    """ Compute prefix list of pattern 
-    
+
+    """ Compute prefix list of pattern
+
     Parameters
     ----------
     pattern: str, target pattern
@@ -25,13 +27,14 @@ def compute_prefix(pattern) -> list:
         if pattern[k] == pattern[i]:
             k += 1
         prefix[i] = k
-    
+
     return prefix
 
 
 def search(text, pattern) -> list:
+
     """ Search pattern in text
-    
+
     Parameters
     ----------
     text: str, input text.
@@ -70,6 +73,3 @@ if __name__ == "__main__":
             print(text[i:i + len(pattern)])
     else:
         print("Not found!")
-
-
-

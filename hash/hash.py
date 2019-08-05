@@ -281,19 +281,23 @@ if __name__ == "__main__":
     print('\n{:*^30}\n'.format(" HashMap "))
 
     hash_map.insert(target)
-    print("{} is in the hash map: {}".format(target, hash_map.search(target)))
+    print("{} is in the hash map: {}".format(
+        target, hash_map.search(target)))
 
     while hash_map.search(target):
         hash_map.delete(target)
 
-    print("{} is in the hash map: {}".format(target, hash_map.search(target)))
+    print("{} is in the hash map: {}".format(
+        target, hash_map.search(target)))
 
     print('\n{:*^30}\n'.format(" HashMapLinkedList "))
 
     hash_map_ll.insert(target)
-    print("{} is in the hash map: {}".format(target, hash_map_ll.search(target)))
+    print("{} is in the hash map: {}".format(
+        target, hash_map_ll.search(target)))
 
     while hash_map_ll.search(target):
         hash_map_ll.delete(target)
 
-    print("{} is in the hash map: {}".format(target, hash_map_ll.search(target)))
+    print("{} is in the hash map: {}".format(
+        target, hash_map_ll.search(target)))
